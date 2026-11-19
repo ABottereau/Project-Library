@@ -9,6 +9,4 @@ echo 'Salut! <br>';
 
 $action = $infos_uri[2];
 
-echo '<br><br><br>';
-
 include('Controller/'.$action.'Controller.php');
