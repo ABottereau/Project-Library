@@ -17,7 +17,7 @@ class AuthorController
         $authors = $statement->fetchAll(PDO::FETCH_FUNC, function($id, $firstName, $lastName) {
             return new Author($id, $firstName, $lastName);
         });
-        include('./View/AuthorList.html.php');
+        include('./View/authorList.html.php');
         foreach($authors as $author) {
             echo '<tr>';
             echo '<td>' . $author->getFirstName() . '</td>';
