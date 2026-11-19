@@ -1,13 +1,34 @@
 <?php
 require_once 'Model/Author.php';
-echo 'Ceci est le AuthorController';
 
-$query = "SELECT id, first_name, last_name FROM author";
-$statement = $pdo->query($query);
-$authors = $statement->fetchAll(PDO::FETCH_FUNC, function($id, $firstName, $lastName) {
-    return new Author($id, $firstName, $lastName);
-});
 
-echo "<pre>";
-print_r($authors);
-echo "</pre>";
+class AuthorController 
+{
+    private $pdo;
+
+    public function __construct($pdo)
+    {
+        $this->pdo = $pdo;
+    }
+
+    public function list() {
+        $query = "SELECT id, first_name, last_name FROM author";
+        $statement = $this->pdo->query($query);
+        $authors = $statement->fetchAll(PDO::FETCH_FUNC, function($id, $firstName, $lastName) {
+            return new Author($id, $firstName, $lastName);
+        });
+        include('./View/AuthorList.html.php');
+        foreach($authors as $author) {
+            echo '<tr>';
+            echo '<td>' . $author->getFirstName() . '</td>';
+            echo '<td>' . $author->getLastName() . '</td>';
+            echo '<td></td>';
+            echo '<td><a href="edit-author.html"><img class="img-30px" src="../data/image/edit.png"
+                                    alt="image of a pen"></a><img class="img-30px" src="../data/image/trash.png"
+                                    alt="image of a trash"></td>';
+            echo '</tr>';
+            
+        }
+    }
+}
+
