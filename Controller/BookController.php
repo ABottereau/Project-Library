@@ -23,8 +23,8 @@ class BookController
             echo '<td>' . $book->getTitle() . '</td>';
             echo '<td>' . $book->getAuthor() . '</td>';
             echo '<td>' . $book->getPublishedDate() . '</td>';
-            echo '<td>' . $book->getAddedDate() . '</td>';
-            echo '<td>' . $book->getReadingStatus() . '</td>';
+            echo '<td>' . '</td>';
+            echo '<td>' . '</td>';
             echo '<td><a href="edit-book.html"><img class="img-30px" src="../data/image/edit.png"
                                 alt="image of a pen"></a><img class="img-30px" src="../data/image/trash.png"
                             alt="image of a trash"></td>
