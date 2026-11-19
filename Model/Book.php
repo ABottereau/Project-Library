@@ -9,15 +9,7 @@ class Book
     private string $addedDate;
     private string $readingStatus;
 
-    public function __construct(int $id, string $title, string $author, string $publishedDate, string $addedDate, string $readingStatus)
-    {
-        $this->id = $id;
-        $this->title = $title;
-        $this->author = $author;
-        $this->publishedDate = $publishedDate;
-        $this->addedDate = $addedDate;
-        $this->readingStatus = $readingStatus;
-    }
+    
 
     public function setId(int $id): void {
         $this->id = $id;
