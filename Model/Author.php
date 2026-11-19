@@ -7,12 +7,11 @@ class Author
     private string $lastName;
     private int $nbBook;
 
-    public function __construct(int $id, string $firstName, string $lastName, int $nbBook)
+    public function __construct(int $id, string $firstName, string $lastName)
     {
         $this->id = $id;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
-        $this->nbBook = $nbBook;
     }
 
     public function setId(int $id): void {
