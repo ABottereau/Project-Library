@@ -1,0 +1,330 @@
+header {
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+}
+header .title-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #2289E9;
+}
+header .title-menu-container .title-menu {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+header .nav {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1D77CA;
+}
+header .nav .nav-item-container {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  z-index: 50;
+  width: 400px;
+}
+header .nav .nav-item-container .nav-item {
+  height: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #FFFFFF;
+  text-decoration: none;
+  z-index: 100;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+header .nav .nav-item-container .nav-item:hover {
+  background-color: #2289E9;
+}
+
+.carousel-css {
+  width: 60%;
+  margin-left: 20%;
+  height: 800px;
+}
+
+.carousel-inner {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.carousel-img {
+  height: 800px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.carousel-control-prev-icon {
+  background-color: #000000;
+}
+
+.carousel-control-next-icon {
+  background-color: #000000;
+}
+
+main .button-and-search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 5%;
+}
+main .button-and-search-container .add-button-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+main .button-and-search-container .add-button-container .add-button {
+  display: flex;
+  align-items: center;
+  height: 29px;
+  border: black solid 0.5px;
+  border-radius: 0.2em;
+  background-color: lightgrey;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+main .button-and-search-container .search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  width: 25%;
+  gap: 15px;
+}
+main .button-and-search-container .search-form input {
+  height: 25px;
+  padding: 0;
+}
+main .button-and-search-container .search-form .search-button-img {
+  width: 20px;
+}
+main table {
+  width: 90%;
+  margin-left: 5%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+main table .sorting-arrows {
+  height: 15px;
+}
+main table .table-column-image {
+  width: 75px;
+}
+main table .table-column-title {
+  width: 35%;
+}
+main table .table-column-author {
+  width: 30%;
+}
+main table .table-column-date {
+  width: 15%;
+}
+main table .table-column-state {
+  width: 15%;
+}
+main table .table-column-edit-delete {
+  width: 60px;
+}
+main table tr {
+  border-bottom: black solid 2px;
+}
+main table th {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 7.5px;
+  padding-top: 7.5px;
+}
+main table td {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 7.5px;
+  padding-top: 7.5px;
+}
+main table td .img-30px {
+  width: 30px;
+}
+main table td .book-img {
+  width: auto;
+  height: 60px;
+}
+main .add-book-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+  gap: 15px;
+  margin-top: 2.5%;
+}
+main .add-book-form .form-book-title-input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+main .add-book-form .label-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+main .add-book-form .form-book-author-select {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+main .add-book-form .form-book-author-select .select-author {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+main .add-book-form .form-book-author-select .button-new-author {
+  text-align: center;
+  width: 200px;
+  border: black solid 0.5px;
+  border-radius: 0.2em;
+  background-color: lightgrey;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+main .add-book-form .bottom-form {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+main .add-book-form .add-image-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+main .add-book-form .add-image-form .form-image-label-parcourir {
+  display: flex;
+  flex-direction: row;
+}
+main .add-book-form .add-image-form .form-img-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: black solid 0.5px;
+}
+main .add-book-form .add-image-form .form-img-container .image-form-book {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+main .add-book-form .bottom-right-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: space-between;
+}
+main .add-book-form .bottom-right-form .bottom-right-top-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 25px;
+}
+main .add-book-form .bottom-right-form .bottom-right-top-form .form-date {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+main .add-book-form .bottom-right-form .bottom-right-top-form .form-book-state-select {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+main .add-book-form .bottom-right-form .bottom-right-top-form .input-form-book {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+main .add-book-form .bottom-right-form .form-add-button {
+  display: flex;
+  justify-content: right;
+  align-items: self-end;
+}
+main .add-book-form .bottom-right-form .form-add-button .form-submit-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+main .add-author-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+  row-gap: 15px;
+  margin-top: 2.5%;
+}
+main .add-author-form .author-form-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .add-author-form .author-form-top .author-form-top-left {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+}
+main .add-author-form .author-form-top .author-form-top-right {
+  display: flex;
+  flex-direction: column;
+  width: 58%;
+}
+main .add-author-form .author-form-bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: right;
+}
+main .add-author-form .author-form-bottom .form-submit-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+main .add-author-form .label-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+main .add-author-form .author-form-firstName-input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+main .add-author-form .author-form-lastName-input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}/*# sourceMappingURL=style.css.map */
