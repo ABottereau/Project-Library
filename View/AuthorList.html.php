@@ -1,7 +1,7 @@
 <main>
         <div class="button-and-search-container">
             <div class="add-button-container">
-                <a class="add-button" href="add-author.html">Ajouter un auteur</a>
+                <a class="add-button" href="/author/add">Ajouter un auteur</a>
             </div>
             <form class="search-form">
                 <input type="text" placeholder="Rechercher..." />

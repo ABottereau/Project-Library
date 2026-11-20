@@ -19,7 +19,7 @@ class BookController
         include('./View/bookList.html.php');
         foreach($books as $book) {
             echo '<tr>';
-            echo '<td><img class="book-img" src="../data/book_cover/' . $book->getTitle() . '.jpg" alt="image livre"></td>';
+            echo '<td><img class="book-img" src="../data/book_cover/' . $book->getId() . '.jpg" alt="image livre"></td>';
             echo '<td>' . $book->getTitle() . '</td>';
             echo '<td>' . $book->getAuthor() . '</td>';
             echo '<td>' . $book->getPublishedDate() . '</td>';
@@ -30,6 +30,10 @@ class BookController
                             alt="image of a trash"></td>
                 </tr>';
         }
+    }
+
+    public function add() {
+        include('./View/bookAdd.html.php');
     }
 
 

@@ -19,8 +19,8 @@
         <nav class="nav">
             <ul class="nav-item-container">
                 <a class="nav-item" href="Accueil.html">Accueil</a>
-                <a class="nav-item" href="Livres.html">Livres</a>
-                <a class="nav-item" href="Auteurs.html">Auteurs</a>
+                <a class="nav-item" href="/book/list">Livres</a>
+                <a class="nav-item" href="/author/list">Auteurs</a>
             </ul>
         </nav>
     </header>
